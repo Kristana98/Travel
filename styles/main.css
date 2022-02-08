@@ -210,7 +210,7 @@ a {
 }
 
 .travel {
-  width: 535px;
+  max-width: 535px;
   height: 220px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -226,7 +226,7 @@ a {
 }
 
 .block_txt-p {
-  width: 491px;
+  max-width: 491px;
   height: 81px;
   font-size: 20px;
   line-height: 27px;
@@ -287,7 +287,7 @@ a {
 .services_txt {
   text-align: center;
   margin-top: 45px;
-  width: 176px;
+  max-width: 176px;
   font-family: "PT Serif", serif;
   font-size: 20px;
   line-height: 27px;
@@ -319,7 +319,7 @@ a {
 }
 
 .services_logo {
-  width: 170px;
+  max-width: 170px;
   padding: 30px;
 }
 
@@ -365,7 +365,7 @@ a {
 }
 
 .block_main_2 {
-  width: 629px;
+  max-width: 629px;
 }
 
 .txt__main {
@@ -390,7 +390,7 @@ a {
 }
 
 .main_3 {
-  width: 100%;
+  max-width: 100%;
   min-height: 537px;
   background-color: #e3d5b8;
 }
@@ -434,13 +434,13 @@ a {
 
 .bravo_img {
   position: absolute;
-  right: 127px;
-  top: 33px;
+  right: 0;
+  top: 42px;
 }
 
 .bravo_block {
-  height: 120px;
-  width: 181px;
+  height: 200px;
+  width: 68px;
   position: relative;
 }
 
@@ -667,7 +667,7 @@ h4 {
 }
 
 .txt_main_4 {
-  width: 356px;
+  max-width: 356px;
   height: 81px;
   font-size: 20px;
   line-height: 26px;
@@ -676,7 +676,7 @@ h4 {
 }
 
 .link_main_4 {
-  width: 296px;
+  max-width: 296px;
   height: 24px;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -688,7 +688,7 @@ h4 {
 .color_white {
   margin-bottom: 62px;
   background-color: #ffffff;
-  width: 410px;
+  max-width: 410px;
   height: 142px;
   padding-top: 21px;
   padding-left: 26px;
@@ -710,9 +710,149 @@ h4 {
 
 .color_beige {
   background-color: #e3d5b8;
-  width: 410px;
+  max-width: 410px;
   height: 142px;
   padding-top: 21px;
   padding-left: 26px;
   border-radius: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .flex-container__main {
+    max-width: 475px;
+  }
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header {
+    height: 1200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card:first-child {
+    top: 25px;
+  }
+  .link_travel {
+    margin-left: 15px;
+    margin-bottom: 50px;
+  }
+  .services_logo {
+    width: 176px;
+    padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_3-cards__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 30px;
+  }
+  .main_3-cards {
+    margin-top: 21px;
+    margin-left: 27px;
+    margin-bottom: 15px;
+  }
+  .flex-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 150%;
+  }
+  .card:first-child {
+    top: 10px;
+  }
+  .services {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_3-cards__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer_txt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .h1 {
+    font-size: 53px;
+    line-height: 65px;
+  }
+  .footer_txt {
+    text-align: center;
+  }
+  .travel {
+    height: 155px;
+  }
+  .card:first-child {
+    top: 60px;
+    width: 302px;
+  }
+  .card__absolute {
+    height: 591px;
+  }
+  .text_box {
+    width: 245px;
+  }
+  .main_3-cards {
+    margin-top: 21px;
+    margin-left: -37px;
+    margin-bottom: 15px;
+  }
+  .txt_main_4 {
+    max-width: 221px;
+    height: 129px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    font-family: "PT Serif", serif;
+  }
+  .color_beige {
+    background-color: #e3d5b8;
+    max-width: 410px;
+    height: 206px;
+    padding-top: 21px;
+    padding-left: 26px;
+    border-radius: 13px;
+  }
+  .h6 {
+    font-size: 48px;
+  }
 }
